@@ -108,7 +108,7 @@ fun Test2(modifier: Modifier = Modifier) {
                 fontWeight = FontWeight.Bold
             )
             Text(
-                "${count} coins per tap", fontSize = 20.sp,
+                "${count.toInt()} coins per tap", fontSize = 20.sp,
                 color = Color.White,
                 textAlign = TextAlign.Center,
                 fontWeight = FontWeight.Bold

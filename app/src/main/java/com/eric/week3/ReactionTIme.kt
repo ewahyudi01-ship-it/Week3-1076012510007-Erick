@@ -69,11 +69,10 @@ enum class GameState {
 fun Test(modifier: Modifier = Modifier) {
 
     var gameState by rememberSaveable { mutableStateOf(GameState.INITIAL) }
-    var count by rememberSaveable{ mutableIntStateOf(0)}
     var textAtas by rememberSaveable{ mutableStateOf("Reaction") }
     var textBawah by rememberSaveable{ mutableStateOf("Test") }
     var buttonText by rememberSaveable{ mutableStateOf("Click to start")  }
-    var trial by rememberSaveable{( mutableIntStateOf(1)) }
+    var trial by rememberSaveable{ mutableIntStateOf(1) }
 
     var startTime by rememberSaveable {
         mutableLongStateOf(0L)
@@ -112,7 +111,6 @@ fun Test(modifier: Modifier = Modifier) {
             }
 
         }
-        GameState.FAILED -> Color(200, 50, 50)
     }
 
     Column(
